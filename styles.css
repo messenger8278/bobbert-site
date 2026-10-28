@@ -322,3 +322,25 @@ nav {
 
 }
 
+
+/* Tech Lab groups use the existing project layout and theme colors. */
+.lab-group {
+  margin-top: 40px;
+  scroll-margin-top: 25px;
+}
+.lab-group-title {
+  font-size: 23px;
+  font-weight: 600;
+  margin: 0 0 20px;
+}
+.project h4 {
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -.5px;
+  line-height: 1.35;
+  margin: 0 0 9px;
+}
+#past {
+  margin-top: 32px;
+  scroll-margin-top: 25px;
+}
