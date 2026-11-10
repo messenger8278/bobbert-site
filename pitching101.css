@@ -1,0 +1,135 @@
+/* Class notes extend the shared site styles without changing other pages. */
+.class-hero {
+  padding-bottom: 80px;
+  max-width: 900px;
+}
+.class-hero h1 {
+  font-size: clamp(46px, 7.5vw, 90px);
+  letter-spacing: -.035em;
+  overflow-wrap: break-word;
+}
+.class-hero .hero-subtitle {
+  margin-bottom: 16px;
+}
+.class-contents {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px 30px;
+  margin-top: 32px;
+}
+.class-content {
+  min-width: 0;
+}
+.class-content h3 {
+  margin: 36px 0 16px;
+  line-height: 1.45;
+}
+.class-content ul {
+  padding-left: 22px;
+  margin: 0 0 24px;
+  color: var(--body-copy);
+}
+.class-content li {
+  padding-left: 4px;
+  margin-bottom: 12px;
+}
+.class-content li::marker {
+  color: var(--accent);
+}
+.class-content li ul {
+  margin: 12px 0 20px;
+}
+.class-content blockquote {
+  margin: 28px 0;
+  padding: 10px 0 10px 22px;
+  border-left: 3px solid var(--accent);
+}
+.class-content blockquote p {
+  margin: 0;
+  font-size: 21px;
+  color: var(--text);
+}
+.class-table {
+  overflow-x: auto;
+  margin: 24px 0 32px;
+  border: 1px solid var(--line);
+}
+.class-table:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 5px;
+}
+.class-table table {
+  width: 100%;
+  min-width: 560px;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.class-table th,
+.class-table td {
+  padding: 16px;
+  vertical-align: top;
+  border-bottom: 1px solid var(--line);
+}
+.class-table th {
+  color: var(--text);
+  font-weight: 650;
+}
+.class-table td {
+  color: var(--body-copy);
+}
+.class-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+.class-part {
+  border-top: 1px solid var(--line);
+  padding: 75px 0 40px;
+  scroll-margin-top: 25px;
+}
+.class-part h2 {
+  max-width: 780px;
+  margin: 24px 0 0;
+}
+.class-tags {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 540px) {
+  .class-hero {
+    padding-bottom: 60px;
+  }
+  .class-table th,
+  .class-table td {
+    padding: 12px;
+  }
+}
+@media print {
+  .class-page {
+    max-width: none;
+    padding: 0;
+  }
+  .site-header,
+  .class-contents,
+  footer {
+    display: none;
+  }
+  .class-page .hero,
+  .class-page .section,
+  .class-part {
+    padding: 24px 0;
+  }
+  .class-page .section {
+    display: block;
+  }
+  .class-table {
+    overflow: visible;
+  }
+  .class-table table {
+    min-width: 0;
+  }
+  .class-content h2,
+  .class-content h3 {
+    break-after: avoid;
+  }
+}

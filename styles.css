@@ -82,7 +82,7 @@ main {
 h1 {
   font-size:clamp(65px,10vw,126px);
   line-height:1.04;
-  letter-spacing:-6px;
+  letter-spacing:-5.4px;
   margin:23px 0 28px;
   font-weight:650
 }
@@ -208,7 +208,7 @@ nav.open {
   padding:95px 0 110px
 }
 h1 {
-  letter-spacing:-3px
+  letter-spacing:-2.7px
 }
 
 }
